@@ -1,0 +1,1328 @@
+ls
+..
+A3
+ls
+cd A3
+man
+man connect
+ls
+vis ~/.config/nushell/config.nu
+vis ~/.config/nushell/env.nu
+ls
+..
+help commands
+ls
+vis ~/.config/nushell/env.nu
+help commands | where name = path
+help commands | where name == path
+help commands | where name == path | first
+path -h
+pwd
+pwd | path basename
+ls
+vis ~/.config/nushell/config.nu
+echo 0
+false
+true
+ls
+./node_controller
+ls
+./Makefile
+echo $git_prompt_info
+echo $(git_prompt_info)
+echo ${git_prompt_info}
+git_prompt_info
+git status
+git pr
+git_prompt_info
+ls
+s
+git status
+cd ../../EXAM1_STUDY
+ls
+make clean
+rm q2
+../
+ls
+cd A3/
+ls
+$nu.config_path
+$nu.config-path
+vis ~/.config/nushell/env.nu
+ls
+vis ~/.config/nushell/config.nu
+ls
+cd ~
+ls
+..
+cd sam
+pwd
+pwd | path basename
+cd -
+cd --
+cd sam/ClassRepos/FA24-COMP5150-OPERATING-SYSTEMS/A3/
+ls
+vis ~/.config/nushell/env.nu
+vis ~/.config/nushell/config.nu
+ls
+vis ~/.oh-my-zsh/custom/themes/arrow.zsh-theme
+ls
+podman ps
+make
+ls
+./run.sh && podman-compose logs
+./run.sh; podman-compose logs
+man accept
+man listen
+man 2 bind
+man listen
+./run.sh; podman-compose logs
+ls 
+ls | where size > 300 B
+ls | where size > 300B
+man 2 bind
+source nu-themes/black-metal-venom
+source nu-themes/black-metal-venom.nu
+ls
+make clean
+ls | where size > 300B
+vis ~/.config/nushell/config.nu
+ls
+./Makefile
+vis ~/.config/nushell/env.nu
+ls
+man rm
+ls
+echo x > a
+ls
+echo x >> a
+echo "x" > a
+ls
+man rm
+vis ~/.config/nushell/config.nu
+vis ~/.config/nushell/env.nu
+vis ~/.config/nushell/config.nu
+vis ~/.config/nushell/env.nu
+ls
+audit2why 
+man audit2why
+ls | where size > 300B
+podman-compose logs
+./run.sh; podman-compose logs
+man memfill
+man mem
+..
+ls
+vis container-compose.yml
+cd -
+man socket
+man recvfrom
+podman ps --all
+./run.sh; podman-compose logs
+man socket
+vis util.h
+make
+make clean
+make
+vis util.h
+make
+man atou
+make
+vis util.h
+man listen
+man 2 bind
+man listen
+man accept
+man fdprintf
+man fprintf
+make
+man
+ls
+man getpid
+man 3type pid_t
+ls
+vis container-compose.yml
+./run.sh; podman-compose logs
+ls
+podman ps --all
+./run.sh; podman-compose logs
+vis run.sh
+podman-compose build
+podman-compose up
+podman-compose down -t 0
+podman-compose up
+podman-compose down
+./run.sh; podman-compose logs
+podman-compose down -t 0
+./run.sh; podman-compose logs
+vis container-compose.yml
+cd node/
+ls
+make clean
+ls
+man sort
+help sort
+help basename
+help
+help commands
+help commands | where name == basename
+help commands | where name == base
+man basename
+man dirname
+man extname
+man pthread_create
+man mutex
+man pthread_mutex
+vis ../A2/donuts.c
+vis buffer_manager.c
+ls
+vis donuts.h
+ls
+man ls
+help rm
+man pthread_mutex_init
+16 ^ 2
+16 ** 2
+0x0F ** 0x0f
+0xf
+0xf ** 0xf
+0xf ** 2
+0xff
+256/16
+256 / 16
+15 / 16
+man 2 write
+git pr
+vis ../A2/donuts.h
+vis node_controller.c
+cd ..
+ls
+cd sam/
+cd ClassRepos/FA24-COMP5150-OPERATING-SYSTEMS/A3/node/
+ls
+vis util.h
+cd ClassRepos/FA24-COMP5150-OPERATING-SYSTEMS/A3/node/
+ls
+vis donuts.h
+man read
+man 2 read
+man 2 write
+ls
+man make
+make -C node/
+vis donuts.h
+ls
+vis donuts.h
+cd node/
+vis donuts.h
+vis node_controller.c
+vis util.h
+vis node_controller.c
+make
+vis node_controller.c
+vis net_prod.c
+ls
+..
+./run.sh; podman-compose logs
+vis Makefile
+make
+vis Makefile
+vis ../A2/donuts.c
+vis ../A2/donuts.h
+vis ../A2/thread_types.h
+vis ../A2/thread_types.c
+vis donuts.h
+make
+vis start.sh
+vis node/net_prod.c
+make clean
+make
+make clean
+make
+ls
+./net_prod
+./net_prod localhost
+make clean
+make
+ls
+./run.sh; podman-compose logs
+vis run.sh
+vis container-compose.yml
+vis node/Containerfile
+./run.sh; podman-compose logs
+ls
+vis node_controller.c
+./net_prod localhost
+./node_controller -n 1 -i 0
+vis start.sh
+./node_controller -n 1 -i 0
+ps
+man ps
+help ps
+ps
+killall node_controller
+./net_prod localhost
+./node_controller -n 1 -i 0
+killall node_controller
+ls
+./run.sh; podman-compose logs
+podman-compose logs
+help sleep
+./run.sh; sleep 1sec; podman-compose logs
+ls
+ls
+./run.sh; sleep 1sec; podman-compose logs
+man 2 sleep
+vis start.sh
+man 3 sleep
+ls
+cd node/
+ls
+cd ClassRepos/FA24-COMP5150-OPERATING-SYSTEMS/A3/node/
+make
+ls
+vis util.h
+vis net_util.h
+make
+make clean
+make
+make clean
+make
+ls
+mkdir artifacts
+make
+make clean
+ls
+make
+vis Makefile
+make
+vis node_controller.c
+vis net_util.c
+vis net_util.c
+vis net_util.h
+vis net_prod.c
+make
+make clean
+make
+ls
+make clean
+ls
+rm *.o
+ls
+make
+ls
+./run.sh; sleep 1sec; podman-compose logs
+vis Makefile
+vis net_prod.c
+vis net_util.h
+make
+make clean
+make
+vis net_util.c
+make clean
+make
+make clean
+make
+make clean
+make
+make clean
+make
+make clean
+make
+make clean
+make
+vis util.h
+make clean
+make
+make clean
+make
+vis Makefile
+make clean
+make
+vis node_controller.c
+ls
+ls
+vis container-compose.yml
+vis net_util.c
+ls
+ls
+cp net_prod.c net_cons.c
+ls
+vis node_controller.c
+ls
+vis Makefile
+make
+make clean
+make
+vis util.h
+vis donuts.h
+vis net_cons.c
+man listen
+vis net_util.h
+man pthread_create
+man pthread_join
+man pthread_tryjoin_np
+man 3type pthread_t
+man pthread_tryjoin_np
+man pthread_create
+vis net_util.h
+vis ../../A2/cs308_hw4/donuts.h
+vis ../../A2/cs308_hw4/donuts.c
+vis ../../A1/proddonuts.c
+vis ../../A1/donuts.h
+vis ../../A1/proddonuts.c
+vis ../../A1/donuts.h
+man semaphore_overview
+vis donuts.h
+vis net_util.h
+man nrand
+man nrand48
+man 3 rand
+man 3 random
+vis donuts.h
+vis net_util.c
+vis buffer_manager.c
+vis donuts.h
+vis net_util.h
+vis Containerfile
+ls
+vis Containerfile
+vis ../container-compose.yml
+vis start.sh
+man nrand48
+./run.sh; sleep 1sec; podman-compose logs
+ls
+vis ../container-compose.yml
+vis start.sh
+cd node/
+./buffer_manager
+./run.sh; sleep 1sec; podman-compose logs
+..
+./run.sh; sleep 1sec; podman-compose logs
+./run.sh; sleep 0.2sec; podman-compose logs
+vis net_prod.c
+vis node_controller.c
+vis start.sh
+./run.sh; sleep 0.1sec; podman-compose logs
+man 3 sleep
+man usleep
+man 3 usleep
+man 3 msleep
+man 3 sleep
+make
+man 3 usleep
+ls
+vis Containerfile
+./run.sh; sleep 0.1sec; podman-compose logs
+ls
+vis net_prod.c
+vis buffer_manager.c
+vis node_controller.c
+vis net_util.h
+vis node_controller.c
+./run.sh; sleep 1sec; podman-compose logs
+vis net_cons.c
+podman-compose logs
+ps
+podman-compose logs
+./run.sh; sleep 1sec; podman-compose logs
+podman-compose logs
+vis net_prod.c
+make clean
+make
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+vis start.sh
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+vis buffer_manager.c
+cd ..
+git add .
+git status
+git add ../.
+git log
+git status
+git commit -m "a3 blackout worldwide event streaming now on hulu"
+git push origin main
+git log -p
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+man msgrcv
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+ls
+cd node/
+man pthread_create
+vis buffer_manager.c
+vis thread_queue.c
+vis thread_queue.h
+make clean
+make
+vis buffer_manager.c
+vis thread_queue.h
+vis thread_queue.c
+ls
+rm vgcore*
+ls
+ls | sort-by -c {|a,b| $a < $b}
+ls
+ls | sort-by -c {|a,b| $a.0 < $b}
+ls | sort-by -c {|a,b| $a.name < $b.name}
+ls | sort-by -c {|a,b| $a.ext < $b.name}
+ls | sort-by -c {|a,b| ($a.name | split column '.') < ($b.name | split column '.')}
+ls | sort-by -c {|a,b| ($a.name | split column '.').1 < ($b.name | split column '.').1}
+ls | sort-by -c {|a,b| ($a.name | split column '.').0 < ($b.name | split column '.').0}
+ls
+man bcopy
+ls
+vis donuts.h
+vis net_prod.c
+vis donuts.h
+vis net_util.h
+man read
+vis buffer_manager.c
+vis net_prod.c
+vis net_prod.c
+vis net_cons.c
+make
+man 2 read
+make clean
+make
+make clean; make
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+ls
+./net_prod localhost
+vis net_util.c
+./node_controller -i 0 -n 1
+./buffer_manager
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+vis net_util.c
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+vis net
+man getaddrinfo
+man gai_strerror
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+./run.sh; sleep 5sec; podman-compose logs
+ls
+vis container-compose.yml
+vis node/start.sh
+make clean; make
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+vis net_cons.c
+./run.sh; sleep 5sec; podman-compose logs
+ls /usr/local/bin
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+vis net_util.c
+./run.sh; sleep 5sec; podman-compose logs
+echo %p
+podman-compose logs
+vis start.sh
+ls
+vis Containerfile
+podman-compose system --reset
+./run.sh; sleep 5sec; podman-compose logs
+podman system reset
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+ls
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose exec node0 sh
+make clean
+make clean -C node
+make -C node
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+ls
+vis container-compose.yml
+podman-compose logs
+vis start.sh
+make clean
+make
+man getaddrinfo
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+man 2 connect
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+./run.sh; sleep 9sec; podman-compose logs
+vis net_util.c
+./run.sh; sleep 9sec; podman-compose logs
+vis start.sh
+cd ..
+podman-compose exec node0 sh
+podman-compose exec bman sh
+podman-compose logs
+ls
+podman-compose down -t 0
+podman-compose build
+vis run.sh
+podman-compose up
+./run.sh; sleep 9sec; podman-compose logs
+vis node/start.sh
+cd node/
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+vis net_util.c
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+./run.sh; sleep 5sec; podman-compose logs
+vis container-compose.yml
+vis start.sh
+man getaddrinfo
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+podman-compose logs -d
+podman-compose down -t 0
+podman-compose down -t 0
+podman-compose up
+../;podman-compose down -t 0
+..;podman-compose down -t 0
+cd .. ;podman-compose down -t 0
+vis node_controller.c
+vis net_prod.c
+vis buffer_manager.c
+vis thread_queue.c
+./run.sh; sleep 5sec; podman-compose logs
+ls
+vis node/thread_queue.c
+vis node/start.sh
+./run.sh; sleep 5sec; podman-compose logs
+ls
+make clean
+ls
+ls -l
+ls -a
+ls -la
+l
+ls
+vis prodcons_util.h
+vis prodcons.h
+make clean
+make
+make clean
+make
+vis Makefile
+make clean
+make
+vis Makefile
+make
+vis Makefile
+make
+vis Makefile
+make
+vis Makefile
+make
+make clean
+make
+make clean
+make
+make clean
+make
+make clean
+make
+ls
+./run.sh; sleep 5sec; podman-compose logs
+ls
+vis shutdown.md
+mv shutdown.md notes.md
+make clean
+make
+man 3 pipe
+man 2 pipe
+man 2 tee
+man 2 splice
+man 2 sendfile
+man 2 fcntl
+man man
+man groff
+man 7 unix
+man 2 socket
+./run.sh; sleep 5sec; podman-compose logs
+cd ../
+cd A2/
+ls
+./donuts
+./A2_process_scope.sh
+chmod +x A2_process_scope.sh
+./A2_process_scope.sh
+./A2_process_scope.sh 1
+vis A2_process_scope.sh
+ls
+ntop
+./donuts PROCESS
+l
+ls
+vis c0
+cd ../
+cd A1/
+ls
+./A1_linux_donut_loop.sh
+./A1_linux_donut_loop.sh 1
+./A1_linux_donut_loop.sh 1 5
+make
+./A1_linux_donut_loop.sh 1 5
+ls
+vis c0.txt
+btop
+ls
+../
+cd A3/
+ls
+./run.sh; sleep 5sec; podman-compose logs
+vis notes.md
+cd ClassRepos/FA24-COMP5150-OPERATING-SYSTEMS/A3/node/
+cd ClassRepos/FA24-COMP5150-OPERATING-SYSTEMS/A3/node/
+ls
+cd ..
+ls
+./run.sh; sleep 5sec; podman-compose logs
+ls
+ls
+vis ../A1/consdonuts.c
+vis ../A1/proddonuts.c
+ls
+cd node/
+ls
+make clean
+ls
+ls | sum size
+help sum
+help
+help commands
+ls | math sum size
+ls | math sum
+ls
+make clean
+ls
+rm node_controller.o
+ls
+make clean
+ls
+make
+ls
+make clean
+ls
+ls | math sum
+ls
+vis net_util.c
+0x80
+0xf0
+0x88
+2 ** 8
+2 ** 7
+5 / 0
+5.0 / 0.0
+cd ClassRepos/FA24-COMP5150-OPERATING-SYSTEMS/A3/node/
+..
+..
+make
+vis ../A2/thread_types.h
+vis Makefile
+make clean
+make
+vis net_util.h
+vis thread_queue.h
+make clean
+make
+vis net_util.h
+vis thread_queue.h
+make clean
+make
+man ld
+info ld
+describe ld
+man describe
+describe Containerfile
+help describe
+make
+make -v
+make
+make clean
+make
+make clean
+make
+vis Makefile
+make clean
+make
+make clean
+make
+vis prodcons.h
+vis net_util.c
+make clean
+make
+make clean
+make
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+podman-compose exec node0 sh
+ls
+vis container-compose.yml
+vis node/Containerfile
+top
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose exec node0 sh
+./run.sh; sleep 5sec; podman-compose logs
+make clean; make
+vis Makefile
+man 2 write
+make clean
+make
+./run.sh; sleep 5sec; podman-compose logs
+make clean
+make
+make clean
+make
+make clean
+make
+vis Makefile
+make
+make clean
+make
+make clean
+make
+podman-compose logs
+make clean
+make
+make clean
+make
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+podman-compose exec node0 sh
+./run.sh; sleep 5sec; podman-compose logs
+make clean
+make
+podman-compose exec node0 sh
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose exec node0 sh
+./run.sh; sleep 5sec; podman-compose logs
+make clean
+make
+podman-compose exec node0 sh
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose exec node0 sh
+make clean
+make
+./run.sh; sleep 5sec; podman-compose logs
+make clean
+make
+podman-compose exec node0 sh
+make clean
+make
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose exec node0 sh
+make clean
+make
+make clean
+make
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose exec node0 sh
+./run.sh; sleep 5sec; podman-compose logs
+make clean; make
+make
+make clean
+make
+podman-compose exec node0 sh
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+man mutex_overview
+man pthread_mutex_init
+man pthread_mutex_lock
+make clean; make
+./run.sh; sleep 5sec; podman-compose logs
+ls
+./node_controller
+./node_controller -n 2 -i 1
+valgrind ./node_controller -n 2 -i 0
+make clean; make
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+./run.sh; sleep 5sec; podman-compose logs
+man pthread_mutex_lock
+make clean
+make
+make clean
+make
+make clean
+make
+make clean
+make
+git status
+make clean
+ls
+rm vgcore.59743
+git add .
+git status
+cd ..
+cd A2/
+ls
+vis proc_DL
+rm proc_DL
+ls
+..
+cd A3
+ls
+git status
+git add ..
+git status
+git commit -m "A3: THE PRECIPICE"
+ls
+vis donuts.h
+vis net_util.c
+vis net_util.h
+git log -p
+git grep TODO
+man fprintf
+man 7 attribute
+man 7 attributes
+vis net_util.c
+vis net_util.h
+make clean; make
+vis container-compose.yml
+vis node/Containerfile
+ls
+vim start.sh
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+man program_invocation_name
+./run.sh; sleep 5sec; podman-compose logs
+vis Makefile
+make clean
+make
+vis Makefile
+uname -r
+help uname
+uname
+sudo dnf update
+systemctl daemon-reload
+make clean
+make
+man pipe
+man queue
+make clean
+make
+vis ../A2/thread_types.c
+man pthread_cond_wait
+./run.sh; sleep 5sec; podman-compose logs
+git log -p
+git pull
+git log -p
+git pull --rebase
+git status
+cd node/
+make clean
+cd ..
+ls
+git status
+git add .
+git commit -ms "A3 warrior"
+git commit -sm "A3 warrior"
+git pull
+git pull --rebase
+ls
+ls node/
+git status
+git diff
+git log -p
+git pull
+vis ../../A2/thread_types.c
+cd ../../A2/
+ls
+./A2.sh
+make clean
+make
+../A3/
+ls
+vis node_controller.c
+ls
+vis buffer_manager.c
+vis prodcons.h
+vis prodcons.c
+vis net_prod.c
+vis net_cons.c
+vis donuts.h
+vis design-docs/notes.md
+git status
+git push
+git status
+git log
+..
+ls
+mkcd EXAM2_STUDY
+mkdir EXAM2_STUDY
+cd EXAM2_STUDY/
+vis notes.md
+cd ../A3/design-docs/
+vis notes.md
+vis ../../EXAM2_STUDY/notes.md
+cd -
+aplay
+man aplay
+man signals
+man signal
+vis notes.md
+ps
+man 2 alarm
+ls
+ls | math sum
+vis ../A1/proddonuts.c
+man sigemptyset
+clock
+clock --verbose
+sudo clock
+man sigaction
+vis ../A1/proddonuts.c
+vim ~/.vim/UltiSnips/tex.snippets
+ls
+ls
+./run.sh; sleep 5sec; podman-compose logs
+neofetch
+uname
+uname -a
+uname
+sudo dnf update
+uname -r
+uname
+brew install aichat
+ls
+cargo install aichat
+ls
+aichat
+vis net_util.h
+vis node_controller.c
+cd ClassRepos/FA24-COMP5150-OPERATING-SYSTEMS/A3/node/
+cd ClassRepos/FA24-COMP5150-OPERATING-SYSTEMS/A3/
+cd ~ClassRepos/FA24-COMP5150-OPERATING-SYSTEMS/A3/
+cd ~/ClassRepos/FA24-COMP5150-OPERATING-SYSTEMS/A3/
+cd node/
+ls
+./run.sh; sleep 5sec; podman-compose logs
+ls
+make clean
+make
+ls
+ls artifacts/
+./net_cons
+man nu
+config env
+vis ~/.config/nushell/env.nu
+ls
+cd ~/ClassRepos/FA24-COMP5150-OPERATING-SYSTEMS/A3/
+cd node/
+ls
+./prodcons
+ls
+cat Makefile
+ls
+cd node/
+ls
+vis Makefile
+vis buffer_manager.c
+ls
+l
+ls
+vis net_util.c
+vis net_util.h
+cd ~/ClassRepos/FA24-COMP5150-OPERATING-SYSTEMS/A3/design-docs/
+ls
+make
+ls
+ls
+./run.sh; sleep 5sec; podman-compose logs
+ls
+vis container-compose.yml
+./run.sh; sleep 5sec; podman-compose logs
+./run.sh; sleep 5sec; podman-compose logs | cat
+./run.sh; sleep 5sec; podman-compose -f logs | cat
+./buffer_manager
+make clean
+make
+./buffer_manager
+make clean
+make
+./buffer_manager
+./run.sh; sleep 5sec; podman-compose logs
+make clean; make > /dev/null
+make clean; make
+./buffer_manager
+make clean; make
+./run.sh; sleep 5sec; podman-compose logs
+make clean
+make
+./buffer_manager
+make clean; make; buffer_manager
+./buffer_manager
+make clean; make; ./buffer_manager
+make clean; make; ./node_controller
+make clean
+make
+ls
+./node_controller
+ls
+./net_cons
+make clean; make
+./net_cons
+./net_prod
+make clean; make
+./net_cons
+make clean; make
+./node_controller
+./buffer_manager
+./net_prod
+./net_cons
+./run.sh; sleep 5sec; podman-compose logs
+make clena
+make clean
+make
+./run.sh; sleep 5sec; podman-compose logs
+ls
+./net_cons
+make clean
+make
+make clean
+make
+make clean; make
+ls
+./net_cons
+./net_prod
+make clean; make
+./net_prod
+make clean; make
+./net_prod
+./net_cons
+./node_controller
+./buffer_manager
+make
+make clean
+make
+make clean
+./run.sh; sleep 5sec; podman-compose logs
+make
+./node_controller
+man __progname
+vis util.c
+man flockfile
+make clean
+make
+make clean
+make
+make clean
+./run.sh; sleep 5sec; podman-compose logs
+make clena
+make clean; make; ./net_cons
+make clean
+./run.sh; sleep 5sec; podman-compose logs
+git add .
+git commit -sm "pretty printing"
+git push
+git log
+ls
+vis buffer_manager.c
+man sleep
+man 3 sleep
+man 3 usleep
+man 3 msleep
+man 3 usleep
+cp ../../A2/thread_types.? .
+ls
+rm thread_types.o
+ls
+make clean; make
+ls
+make
+vis thread_types.c
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs | grep nc0
+podman-compose logs | grep 'nc0'
+podman-compose logs 2> >(grep nc2)
+podman-compose logs err> >(grep nc2)
+podman-compose logs err> | grep nc2
+podman-compose logs err> >grep nc2
+podman-compose logs err> >(grep nc2)
+podman-compose logs err>(grep nc2)
+podman-compose logs err> | grep nc2
+podman-compose logs err>| grep nc2
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs err>| grep nc2
+make
+./run.sh; sleep 5sec; podman-compose logs
+podman-compose logs
+make clean
+make
+./run.sh; sleep 5sec; podman-compose logs
+vis net_util.c
+make clean
+make
+git grep fuck
+git add .
+git commit -sm "how to itc"
+make clean
+git add .
+git commit --amend
+ls
+rm 0
+rm 1
+rm >grep
+git add .
+git commit --amend
+git push
+git log -p
+ls
+vis container-compose.yml
+./run.sh; sleep 5sec; podman-compose logs
+man man
+ls
+vis net_prod.c
+vis net_cons.c
+vis buffer_manager.c
+vis net_cons.c
+vis node_controller.c
+vis net_prod.c
+vis net_cons.c
+vis donuts.h
+vis util.h
+vis net_util.h
+vis net_prod.c
+vis buffer_manager.c
+vis net_util.c
+vis prodcons.c
+vis prodcons.h
+vis net_util.c
+vis node_controller.c
+vis net_prod.c
+vis net_cons.c
+vis buffer_manager.c
+vis net_util.h
+vis util.h
+vis donuts.h
+vis notes.md
+vis Makefile
+vis ~/.config/vis/themes/seti.lua
+vis buffer_manager.c
+vis Makefile
+vis ~/.config/vis/visrc.lua
+vis ~/Dev/vis/lua/lexers/ansi_c.lua
+make clean
+make
+./run.sh; sleep 5sec; podman-compose logs
+make clean
+make
+make clean
+make
+cd ~/.config/vis/
+ls
+vis Makefile
+zsh
+ls
+vis Makefile
+vis visrc.lua
+ls
+cd plugins/
+ls
+git clone https://git.sr.ht/~mcepl/vis-filetype-settings
+ls
+cp vis-filetype-settings/init.lua .
+ls
+rm -r vis-filetype-settings/
+ls
+mv init.lua filetype-settings.lua
+..
+ls
+ls ~/.config/vis/plugins/
+cd ~/.config/vis/plugins/
+ls
+cd -
+vis visrc.lua
+ls
+vis ~/Dev/IFSRS/src/alias_method.rs
+vis Makefile
+cd -
+ls
+cd -
+vis Makefile
+vit donuts.h
+vis prodcons.h
+vis prodcons.c
+vis net_util.c
+vis net_prod.c
+cd -
+cd ~/ClassRepos/FA24-COMP5150-OPERATING-SYSTEMS/A3/
+./run.sh; sleep 5sec; podman-compose logs
+vis node_controller.c
+zsh
+ls
+make clean
+finger
+vis message_queue.c
+vis thread_queue.h
+vis util.h
+vis message_queue.h
+ls
+vis thread_types.c
+vis priority_queue.c
+vis priority_queue.h
+man memset
+vis buffer_manager.c
+man memset
+vis maekawa.h
+vis util.h
+ls
+vis buffer_manager.c
+vis net_util.c
+vis message_queue.c
+vis net_util.h
+vis maekawa.h
+vis donuts.h
+vis net_cons.c
+ls
+ls
+reset
+reset
+reset
+reset
+reset
+reset
+ls
+reset
+reset
+reset
+reset
+vis Makefile
+ls
+vis start.sh
+vis maekawa.h
+vis util.h
+vis buffer_manager.c
+vis notes.md
+vis net_util.h
+ls
+..
+vis donuts.h
+vis maekawa.h
+vis net_util.c
+vis message_queue.c
+vis priority_queue.c
+vis net_cons.c
+vis net_prod.c
+sudo reboot
