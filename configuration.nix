@@ -10,6 +10,8 @@
       ./hardware-configuration.nix
     ];
 
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -17,8 +19,25 @@
 
   hardware.graphics.enable = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  virtualisation.libvirtd = {
+    enable = true;
+    qemu = {
+      package = pkgs.qemu_kvm;
+      runAsRoot = true;
+      swtpm.enable = true;
+      ovmf = {
+        enable = true;
+        packages = [(pkgs.OVMF.override {
+          secureBoot = true;
+          tpmSupport = true;
+        }).fd];
+      };
+    };
+  };
+
+
+  networking.hostName = "nixos";
+  # networking.wireless.enable = true;  # Enables wpa_supplicant
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -46,7 +65,7 @@
   };
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
+  #services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
@@ -72,8 +91,7 @@
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
 
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
+    # use the example session manager
     #media-session.enable = true;
   };
 
@@ -84,7 +102,7 @@
   users.users.sam = {
     isNormalUser = true;
     description = "sam";
-    extraGroups = [ "networkmanager" "wheel" "input" "audio" "video" ];
+    extraGroups = [ "networkmanager" "wheel" "input" "audio" "video" "libvirtd" ];
     packages = with pkgs; [
     #  thunderbird
     ];
@@ -101,8 +119,9 @@
   };
 
   # Sway
+#  programs.wayland.enable = true; # Do we need this?
   programs.waybar.enable = true;
-  programs.light.enable = true;
+  programs.foot.enable = true;
   programs.sway = {
     enable = true;
     wrapperFeatures.gtk = true;
@@ -113,9 +132,8 @@
       wf-recorder
       mako
       grim
+      sway-contrib.grimshot
       slurp
-      foot
-      rofi
       fuzzel
       brightnessctl
     ];
@@ -133,11 +151,19 @@
     powerline-fonts
     nerdfonts
   ];
+  documentation.enable = true;
+  documentation.man.enable = true;
+  documentation.nixos.includeAllModules = true;
+
   programs.command-not-found.enable = false;
   programs.nix-index.enable = true;
   programs.nix-ld.enable = true;
   programs.nix-required-mounts.enable = true;
 
+  programs.htop.enable = true;
+  programs.zsh.enable = true;
+  programs.virt-manager.enable = true;
+  programs.ccache.enable = true;
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -146,9 +172,8 @@
     nixpkgs-fmt
     nixfmt-rfc-style
 
-    #editors 
+    #editors
     vim
-    #vis
     visfork
 
     # util
@@ -156,39 +181,36 @@
     killall
     ffmpeg
     wget
-    dbus
+    curl
 
     # shells
     nushell
-    zsh
 
     # dev
-    virt-manager
+    pkg-config
     libguestfs
     libvirt
-    gcc
-    gnumake
-    llvm
-    libclang
-    clang
+    #glibc
+    #gnumake
+    #libllvm
+    #llvm
+    #llvmPackages.clangWithLibcAndBasicRtAndLibcxx
+    #libclang
+    #clangStdenv
+    #clang
     gdb
     valgrind
-    rustup
+    uv
     python3Full
-    curl
     git
     gh
-
-    # build deps for vis
-    pkg-config
-    libtermkey
-    ncurses
-    lua
-    lua54Packages.lpeg
-    tre
+    mutt
+    man-pages
+    man-pages-posix
 
     # apps
     discord-canary
+    latest.firefox-nightly-bin
   ];
 
   nixpkgs.overlays = [
@@ -197,7 +219,8 @@
         src = /home/sam/Dev/vis;
       });
     })
-  ]; 
+    (import /home/sam/Dev/nixpkgs-mozilla/firefox-overlay.nix)
+  ];
 
   services.gnome.gnome-keyring.enable = true;
 
